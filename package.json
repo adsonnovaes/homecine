@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "homecine",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,10 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },
   "devDependencies": {
+    "@pinia/nuxt": "^0.5.4",
+    "pinia": "^2.2.2",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.0"
   }
