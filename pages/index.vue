@@ -264,6 +264,9 @@ useHead({
       property: "og:title",
       content: "Homecine",
     },
+    { property: "og:locale", content: "pt_BR" },
+    { property: "og:site_name", content: "Homecine" },
+    { property: "og:type", content: "website" },
   ],
 });
 </script>
