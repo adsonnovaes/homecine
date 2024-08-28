@@ -19,6 +19,15 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/tailwindcss",
   ],
+
+  runtimeConfig: {
+    public: {
+      omdbApiKey: process.env.OMDB_API_KEY || "",
+      omdbApi: process.env.OMDB_API || "",
+      authApi: process.env.AUTH_API || "",
+    },
+  },
+
   vite: {
     vue: {
       template: {

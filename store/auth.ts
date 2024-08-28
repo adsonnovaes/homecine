@@ -12,20 +12,19 @@ export const useAuthStore = defineStore("auth", {
   }),
   actions: {
     async authenticateUser({ username, password }: UserPayloadProps) {
+      const { authApi } = useRuntimeConfig().public;
+
       this.loading = true;
 
       try {
-        const { data, error }: any = await useFetch(
-          "https://dummyjson.com/auth/login",
-          {
-            method: "post",
-            headers: { "Content-Type": "application/json" },
-            body: {
-              username,
-              password,
-            },
-          }
-        );
+        const { data, error }: any = await useFetch(`${authApi}`, {
+          method: "post",
+          headers: { "Content-Type": "application/json" },
+          body: {
+            username,
+            password,
+          },
+        });
 
         if (error.value) {
           throw new Error("Authentication failed");
