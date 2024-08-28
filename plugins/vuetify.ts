@@ -91,6 +91,7 @@ const customTheme: ThemeDefinition = {
     "grey-900-80": "hsla(224, 39%, 11.6%, 0.8)",
     "grey-900-98": "hsla(224, 39%, 11.6%, 0.98)",
 
+    "transparent": "hsla(0, 0%, 0%, 0)",
     "black-10": "hsla(0, 0%, 0%, 0.1)",
     "black-20": "hsla(0, 0%, 0%, 0.2)",
     "black-30": "hsla(0, 0%, 0%, 0.3)",
