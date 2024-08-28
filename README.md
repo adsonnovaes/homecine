@@ -1,3 +1,5 @@
+# Homecine
+
 ## Tecnologias utilizadas
 
 - Nuxt3
@@ -13,8 +15,6 @@
 - Consumo da api do [OMDB](https://www.omdbapi.com/).
 - Listagem de filmes, com a possibilidade de pesquisa pelo título e tipo de mídia (Série ou filmes e séries).
 - Visualização de todos os detalhes do item da lista, ao clicar no card.
-
-# Nuxt 3 Minimal Starter
 
 ## Setup
 
