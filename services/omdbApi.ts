@@ -31,7 +31,7 @@ export const useOmdbFetch = async (
 
 export const useOmdbFetchDetail = async (
   imdbId: string
-): Promise<OmdbApiResponse | null> => {
+): Promise<any> => {
   const { omdbApi, omdbApiKey } = useRuntimeConfig().public;
 
   try {

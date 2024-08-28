@@ -36,7 +36,7 @@
         :disabled="loading"
         group
       >
-        <v-btn class="!font-bold !rounded-md ml-2" value="">Todos</v-btn>
+        <v-btn class="!font-bold !rounded-md mr-2" value="">Todos</v-btn>
 
         <!-- <v-btn class="!font-bold !rounded-md mx-1" value="movies"
             >Filmes</v-btn
@@ -239,6 +239,32 @@ watch(search, () => {
 
 onMounted(() => {
   fetchData();
+});
+
+useHead({
+  title: "Listagem - Homecine",
+  meta: [
+    {
+      hid: "title",
+      name: "title",
+      content: "Homecine",
+    },
+    {
+      hid: "description",
+      name: "description",
+      content: "Filmes e seus detalhes",
+    },
+    {
+      hid: "keywords",
+      name: "keywords",
+      content: "filmes, séries e tvshows",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Homecine",
+    },
+  ],
 });
 </script>
 

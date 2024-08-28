@@ -117,4 +117,30 @@ const login = async () => {
     }
   }
 };
+
+useHead({
+  title: "Login - Homecine",
+  meta: [
+    {
+      hid: "title",
+      name: "title",
+      content: "Homecine",
+    },
+    {
+      hid: "description",
+      name: "description",
+      content: "Filmes e seus detalhes",
+    },
+    {
+      hid: "keywords",
+      name: "keywords",
+      content: "filmes, séries e tvshows",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Homecine",
+    },
+  ],
+});
 </script>

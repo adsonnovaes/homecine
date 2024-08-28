@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full h-dvh bg-[#121829] text-white overflow-y-scroll overflow-x-hidden">
+  <div
+    class="w-full h-dvh bg-[#121829] text-white overflow-y-scroll overflow-x-hidden"
+  >
     <v-toolbar class="px-5 py-2 !shadow-lg" color="grey-900-80">
       <div class="w-[42px] h-[42px]">
         <NuxtLink to="/">
@@ -20,7 +22,7 @@
       </v-btn>
     </v-toolbar>
     <div
-      class="w-full bg-[#121829] text-white [background-image:url('/img/bg-ilustration.png')] bg-[100%] bg-repeat-y px-28 py-20"
+      class="wrapper-list w-full bg-[#121829] text-white [background-image:url('/img/bg-ilustration.png')] bg-cover bg-repeat-y px-28 py-20"
     >
       <slot />
     </div>
@@ -44,3 +46,11 @@ const logout = () => {
   router.push("/login");
 };
 </script>
+
+<style scoped>
+@media (max-width: 768px) {
+  .wrapper-list {
+    padding: 80px 24px !important;
+  }
+}
+</style>
